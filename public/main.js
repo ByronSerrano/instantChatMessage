@@ -41,6 +41,8 @@ socket.on("chat-message", (data) => {
     addMessageToUI(false, data)
 })
 
+// moment(data.dateTime).fromNow(true)
+
 //add the messague in the interface
 function addMessageToUI(isOwnMessage, data) {
     clearFeedback()
@@ -48,7 +50,7 @@ function addMessageToUI(isOwnMessage, data) {
         <li class="${isOwnMessage ? "message-right" : "message-left"}">
             <p class="message">
                 ${data.message}
-            <span>${data.name} • ${moment(data.dateTime).fromNow(true)}</span>
+            <span>${data.name} • ${moment().calendar()}</span>
             </p>
         </li>`
     

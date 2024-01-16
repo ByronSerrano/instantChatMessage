@@ -1,5 +1,5 @@
 {
-  "name": "chat_group",
+  "name": "chatGroup",
   "version": "1.0.0",
   "description": "chat group by Byron Serrano and Johannes Carofilis",
   "main": "index.js",
@@ -11,6 +11,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
+    "firebase": "^10.7.1",
+    "firebase-admin": "^12.0.0",
     "socket.io": "^4.7.4"
   },
   "devDependencies": {
